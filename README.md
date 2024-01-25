@@ -1,2 +1,2 @@
-# hecktor22
+# Hecktor22
 Repository where the code I developed for my thesis project is stored
