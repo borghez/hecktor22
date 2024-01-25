@@ -1,0 +1,57 @@
+# See https://pyradiomics.readthedocs.io/en/latest/customization.html for all the details
+
+imageType:
+    Original: {}
+
+featureClass:
+    #firstorder:
+    shape:
+#    glcm:  # Disable SumAverage by specifying all other GLCM features available
+#        - 'Autocorrelation'
+#        - 'JointAverage'
+#        - 'ClusterProminence'
+#        - 'ClusterShade'
+#        - 'ClusterTendency'
+#        - 'Contrast'
+#        - 'Correlation'
+#        - 'DifferenceAverage'
+#        - 'DifferenceEntropy'
+#        - 'DifferenceVariance'
+#        - 'JointEnergy'
+#        - 'JointEntropy'
+#        - 'Imc1'
+#        - 'Imc2'
+#        - 'Idm'
+#        - 'Idmn'
+#        - 'Id'
+#        - 'Idn'
+#        - 'InverseVariance'
+#        - 'MaximumProbability'
+#        - 'SumEntropy'
+#        - 'SumSquares'
+#    glrlm:
+#    glszm:
+#    gldm :
+
+
+setting:
+    #Normalization
+    
+    #Resampling
+    #resampledPixelSpacing: [None]
+    #interpolator: 'sitkBSpline'
+    #padDistance: 5
+    
+    #Resegmentation
+    #Segmented voxels outside the resegmentRange are removed from the mask prior to feature calculation. When the value is 
+    #None(default), no resegmentation is performed. When resegmentShape is False, only first order and texture classes are
+    #calculated using the resegmented mask.
+    resegmentRange: [-1000 , 3000]
+    resegmentMode: 'absolute'
+    resegmentShape: False
+
+    #Image discretization
+    binWidth: 10
+
+    #Miscellaneous
+    additionalInfo: True
